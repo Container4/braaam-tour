@@ -5,7 +5,7 @@ import "components/column/column";
 import "components/container/container";
 import "components/row/row";
 import "components/date/date";
-// import "components/fontawesome_icon/fontawesome_icon";
+import "components/fontawesome_icon/fontawesome_icon";
 import "components/header/header";
 import "components/footer/footer";
 import "components/hr/hr";

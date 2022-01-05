@@ -2,6 +2,7 @@
   "name": "braaam_tour",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "@rails/webpacker": "^3.2.2",
     "fullcalendar": "^3.9.0",
     "jquery": "^3.3.1",
