@@ -11,8 +11,8 @@ amazon:
   service: S3
   access_key_id: <%= Rails.application.credentials.access_key_id %>
   secret_access_key: <%= Rails.application.credentials.secret_access_key %>
-  region: eu-west-2
-  bucket: braaam
+  region: eu-west-3
+  bucket: braaam-tour
 
 # Use rails credentials:edit to set the Digital Ocean (S3 compatible) secrets (as aws:access_key_id|secret_access_key)
 # digitalocean:
