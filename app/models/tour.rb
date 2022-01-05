@@ -122,6 +122,7 @@ class Tour < ApplicationRecord
   end
 
   def season
+    return nil unless has_booking_days?
     infos = { year: self.tour_start_date.year.to_s }
     infos[:season] = "summer" if self.summer_tour?
     infos[:season] = "winter" if self.winter_tour?
@@ -129,10 +130,12 @@ class Tour < ApplicationRecord
   end
 
   def summer_tour?
+    return false unless has_booking_days?
     self.tour_start_date >= Date.strptime(ApplicationController.helpers.summer_dates.first, "%d-%b-%y") and self.tour_start_date <= Date.strptime(ApplicationController.helpers.summer_dates.last, "%d-%b-%y")
   end
 
   def winter_tour?
+    return false unless has_booking_days?
     self.tour_start_date >= Date.strptime(ApplicationController.helpers.winter_dates.first, "%d-%b-%y") and self.tour_start_date <= Date.strptime(ApplicationController.helpers.winter_dates.last, "%d-%b-%y")
   end
 end
