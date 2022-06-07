@@ -108,7 +108,7 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
-    jmespath (1.4.0)
+    jmespath (1.6.1)
     komponent (2.2.0)
       actionview (>= 4.2)
       activesupport (>= 4.2)
